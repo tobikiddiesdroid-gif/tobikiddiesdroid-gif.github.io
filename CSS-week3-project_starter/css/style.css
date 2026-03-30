@@ -1,1 +1,79 @@
+/* Existing styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 150%;
+}
 
+/* Skip to Main Content Link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+header {
+  background-color: #f4f4f4;
+}
+
+nav {
+  background-color: #333;
+  display: inline-block;
+  width: 80%;
+}
+nav img {
+  width: 10%;
+}
+
+main {
+  background-color: #ffffff;
+  font-size: 120%;
+}
+
+footer {
+  background-color: #2c3e50;
+}
+
+/* COMMENTED OUT - li styling */
+/*
+li {
+  display: inline-block;
+  width: 30%;
+}
+*/
+
+/* H1 styling */
+h1 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #2c3e50;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around;
+  align-items: start;
+  row-gap: 20px;
+}
+
+.grid img {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
