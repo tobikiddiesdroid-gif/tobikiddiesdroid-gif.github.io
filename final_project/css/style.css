@@ -1,1 +1,173 @@
 
+/* GENERAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f5f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* =========================
+   SKIP LINK (VISIBLE ONLY ON FOCUS)
+   ========================= */
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 10px;
+  background: #000;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  top: 10px;
+}
+
+/* =========================
+   NAVIGATION (FLEXBOX)
+   ========================= */
+nav {
+  background-color: #3e2c23;
+  padding: 15px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+/* Hover effect */
+nav a:hover {
+  background-color: #d4a373;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* =========================
+   HEADER
+   ========================= */
+header img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2.5rem;
+  color: #3e2c23;
+}
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+main {
+  padding: 30px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* =========================
+   IMAGE STYLING (BOX MODEL)
+   ========================= */
+img {
+  width: 100%;
+  border: 4px solid #3e2c23;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+/* =========================
+   FEATURE CARD
+   ========================= */
+.feature-card {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* =========================
+   GALLERY (GRID)
+   ========================= */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  text-align: center;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+/* Hover effect on gallery items */
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   FLEXBOX FOR TEAM SECTION
+   ========================= */
+.team-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.team-member {
+  width: 220px;
+  text-align: center;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+/* =========================
+   NTH-CHILD SELECTOR
+   Every second image gets a different border radius
+   ========================= */
+.gallery-item:nth-child(even) img {
+  border-radius: 50%;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+  background-color: #3e2c23;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
